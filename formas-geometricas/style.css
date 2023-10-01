@@ -1,0 +1,165 @@
+:root {
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+
+	--color-main: #15253F;
+    --color-h1: #DDDEE5;
+    --color-h2: #7C8594;
+    --color-formas: #DDDEE5;
+	
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--color-h1);
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-h2);
+    text-align: center;
+}
+
+.h2 {
+    color: var(--color-h2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+body {
+    background: var(--color-black);
+}
+
+main{
+    background: var(--color-main);
+    margin: 40px;
+    height: 88vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#quad, #ret, #circ, #tria, #trap, #para, #pent, #hexa, #item  {
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background: var(--color-formas);
+    align-items: center;
+}
+
+.retangulo {
+    width: 200px;
+    height: 100px;
+    background: var(--color-formas);
+    align-items: center;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background: var(--color-formas);
+    align-items: center;
+    border-radius: 50%;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid var(--color-formas);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    align-items: center; 
+}
+
+.trapezio {
+    width: 200px;
+    height: 0;
+    border-bottom: 100px solid var(--color-formas);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    align-items: center; 
+}
+
+.paralelogramo {
+    width: 200px;
+    height: 100px;
+    background: var(--color-formas);
+    transform: skewX(-20deg);
+    margin-left: 15px;
+    align-items: center; 
+}
+
+.pentagono {
+    width: 150px;
+    height: 0;
+    position: relative;
+    display: inline-block;
+    border-top: 70px solid var(--color-formas);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    margin-top: 50px;
+}
+
+.pentagono::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -119px;
+    left: -34px;
+    border-bottom: 50px solid var(--color-formas);
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+
+.hexagono {
+    width: 100px;
+    height: 60px;
+    background: var(--color-formas);
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hexagono::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -30px;
+    border-bottom: 30px solid var(--color-formas);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagono::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -29.5px;
+    border-top: 30px solid var(--color-formas);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}

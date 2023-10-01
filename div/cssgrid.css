@@ -1,0 +1,68 @@
+:root {
+    --color-white: #ffffff;
+    --color-blue1: #f5f8fc;
+    --color-blue2: #ebf0fa;
+    --color-blue3: #627daa;
+    --color-blue4: #4e6994;
+    --color-blue5: #172742;
+    --color-red: #e63636;
+    --color-gray: #3D557D4D;
+    --color-bege: #FAF8F5;
+    --color-bege2: #FAF3E6;
+    --color-marron1: #85714D;
+    --color-marron2: #52401E;
+    --color-gradiente-blue: linear-gradient(135deg, #4E6994, #203250);
+    --color-gradiente-bege: linear-gradient(135deg, #85714D, #251B08);
+}
+
+body{
+    background: var(--color-marron2);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 450px auto 450px;
+    grid-template-rows: 150px auto 90px;
+    grid-gap: 10px 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container div, header, footer{
+    background: var(--color-white);
+    color: var(--color-blue5);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header{
+    background: var(--color-gradiente-blue);
+    color: var(--color-white);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sidebar-left{
+    background: var(--color-bege2);
+    height: 670px;
+}
+
+.container .content{
+    background: var(--color-blue3);
+    height: 670px;
+}
+
+.sidebar-rigth{
+    background: var(--color-bege2);
+    height: 670px;
+}
+
+footer{
+    background: var(--color-gradiente-blue);
+    color: var(--color-white);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

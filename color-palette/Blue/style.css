@@ -1,0 +1,94 @@
+:root {
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+
+	--color-blue1: #021024;
+	--color-blue2: #052659;
+	--color-blue3: #5483B3;
+	--color-blue4: #7DA0CA;
+	--color-blue5: #C1E8FF;
+    --color-blue6: #D5FCFF;
+
+	--color-gradiente: linear-gradient(135deg, #021024, #052659, #5483B3, #7DA0CA, #C1E8FF, #D5FCFF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main {
+    background: var(--color-gradiente);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+#blue1 {
+    background: var(--color-blue1);
+    color: var(--color-blue6);
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+
+#blue2 {
+    background: var(--color-blue2);
+    color: var(--color-blue5);
+    margin-top:-80px;
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+
+#blue3 {
+    background: var(--color-blue3);
+    color: var(--color-blue4);
+    margin-top:-80px;
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+
+#blue4 {
+    background: var(--color-blue4);
+    color: var(--color-blue3);
+    margin-top:-80px;
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+
+#blue5 {
+    background: var(--color-blue5);
+    color: var(--color-blue2);
+    margin-top:-80px;
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+
+#blue6 {
+    background: var(--color-blue6);
+    color: var(--color-blue1);
+    margin-top:-80px;
+    width: 500px;
+    height: 200px;
+    border-radius: 100px;
+    padding-top: 50px;
+}
+

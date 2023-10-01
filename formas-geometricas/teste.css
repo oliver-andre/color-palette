@@ -1,0 +1,62 @@
+:root {
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+
+	--color-main: #15253F;
+    --color-h1: #DDDEE5;
+    --color-h2: #7C8594;
+    --color-formas: #DDDEE5;
+	
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-black);
+}
+
+main{
+    background: var(--color-main);
+    margin: 40px;
+    height: 88vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.h2 {
+    color: var(--color-h2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#para {
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paralelogramo {
+    width: 200px;
+    height: 100px;
+    background: var(--color-formas);
+    transform: skewX(-20deg);
+    margin-left: 15px;
+    align-items: center;
+    transform: rotate(90deg); 
+}
